@@ -1,0 +1,2146 @@
+[2024-04-26 16:17:17,625] INFO Kafka Connect worker initializing ... (org.apache.kafka.connect.cli.AbstractConnectCli:114)
+[2024-04-26 16:17:17,628] INFO WorkerInfo values: 
+	jvm.args = -Xms256M, -Xmx2G, -XX:+UseG1GC, -XX:MaxGCPauseMillis=20, -XX:InitiatingHeapOccupancyPercent=35, -XX:+ExplicitGCInvokesConcurrent, -XX:MaxInlineLevel=15, -Djava.awt.headless=true, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -Dkafka.logs.dir=/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../logs, -Dlog4j.configuration=file:bin/../config/connect-log4j.properties
+	jvm.spec = Ubuntu, OpenJDK 64-Bit Server VM, 11.0.22, 11.0.22+7-post-Ubuntu-0ubuntu222.04.1
+	jvm.classpath = /home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/activation-1.1.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/aopalliance-repackaged-2.6.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/argparse4j-0.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/audience-annotations-0.12.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/caffeine-2.9.3.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/checker-qual-3.19.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/commons-beanutils-1.9.4.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/commons-cli-1.4.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/commons-collections-3.2.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/commons-digester-2.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/commons-io-2.11.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/commons-lang3-3.8.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/commons-logging-1.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/commons-validator-1.7.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/connect-api-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/connect-basic-auth-extension-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/connect-json-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/connect-mirror-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/connect-mirror-client-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/connect-runtime-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/connect-transforms-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/error_prone_annotations-2.10.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/hk2-api-2.6.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/hk2-locator-2.6.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/hk2-utils-2.6.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-annotations-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-core-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-databind-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-dataformat-csv-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-datatype-jdk8-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-jaxrs-base-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-jaxrs-json-provider-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-module-jaxb-annotations-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-module-scala_2.13-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jakarta.activation-api-1.2.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jakarta.annotation-api-1.3.5.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jakarta.inject-2.6.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jakarta.validation-api-2.0.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jakarta.xml.bind-api-2.3.3.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/javassist-3.29.2-GA.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/javax.activation-api-1.2.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/javax.annotation-api-1.3.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/javax.servlet-api-3.1.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jaxb-api-2.3.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jersey-client-2.39.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jersey-common-2.39.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jersey-container-servlet-2.39.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jersey-container-servlet-core-2.39.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jersey-hk2-2.39.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jersey-server-2.39.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-client-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-continuation-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-http-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-io-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-security-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-server-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-servlet-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-servlets-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-util-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-util-ajax-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jline-3.22.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jopt-simple-5.0.4.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jose4j-0.9.4.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jsr305-3.0.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka_2.13-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-clients-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-group-coordinator-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-log4j-appender-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-metadata-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-raft-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-server-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-server-common-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-shell-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-storage-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-storage-api-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-streams-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-streams-examples-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-streams-scala_2.13-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-streams-test-utils-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-tools-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-tools-api-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/lz4-java-1.8.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/maven-artifact-3.8.8.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/metrics-core-2.2.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/metrics-core-4.1.12.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-buffer-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-codec-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-common-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-handler-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-resolver-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-transport-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-transport-classes-epoll-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-transport-native-epoll-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-transport-native-unix-common-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/opentelemetry-proto-1.0.0-alpha.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/osgi-resource-locator-1.0.3.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/paranamer-2.8.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/pcollections-4.0.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/plexus-utils-3.3.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/protobuf-java-3.23.4.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/reflections-0.10.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/reload4j-1.2.25.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/rocksdbjni-7.9.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/scala-collection-compat_2.13-2.10.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/scala-java8-compat_2.13-1.0.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/scala-library-2.13.12.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/scala-logging_2.13-3.9.4.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/scala-reflect-2.13.12.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/slf4j-api-1.7.36.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/slf4j-reload4j-1.7.36.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/snappy-java-1.1.10.5.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/swagger-annotations-2.2.8.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/trogdor-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/zookeeper-3.8.3.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/zookeeper-jute-3.8.3.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/zstd-jni-1.5.5-6.jar
+	os.spec = Linux, amd64, 6.5.0-27-generic
+	os.vcpus = 20
+ (org.apache.kafka.connect.runtime.WorkerInfo:71)
+[2024-04-26 16:17:17,628] INFO Scanning for plugin classes. This might take a moment ... (org.apache.kafka.connect.cli.AbstractConnectCli:120)
+[2024-04-26 16:17:17,642] INFO Loading plugin from: /home/ids4/Downloads/kafka_2.13-3.7.0/libs/connect-file-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-26 16:17:17,789] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/ids4/Downloads/kafka_2.13-3.7.0/libs/connect-file-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-26 16:17:17,789] INFO Loading plugin from: classpath (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-26 16:17:17,796] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69 (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-26 16:17:17,796] INFO Scanning plugins with ServiceLoaderScanner took 155 ms (org.apache.kafka.connect.runtime.isolation.PluginScanner:70)
+[2024-04-26 16:17:17,797] INFO Loading plugin from: /home/ids4/Downloads/kafka_2.13-3.7.0/libs/connect-file-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-26 16:17:17,835] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/ids4/Downloads/kafka_2.13-3.7.0/libs/connect-file-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-26 16:17:17,835] INFO Loading plugin from: classpath (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-26 16:17:18,571] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69 (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-26 16:17:18,572] INFO Scanning plugins with ReflectionScanner took 775 ms (org.apache.kafka.connect.runtime.isolation.PluginScanner:70)
+[2024-04-26 16:17:18,573] WARN All plugins have ServiceLoader manifests, consider reconfiguring plugin.discovery=service_load (org.apache.kafka.connect.runtime.isolation.Plugins:105)
+[2024-04-26 16:17:18,574] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,574] INFO Added plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,574] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,574] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,574] INFO Added plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,574] INFO Added plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,574] INFO Added plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,574] INFO Added plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,574] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,574] INFO Added plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,575] INFO Added plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.file.FileStreamSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.file.FileStreamSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,576] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,577] INFO Added plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:17:18,578] INFO Added alias 'RecordIsTombstone' to plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'FileStreamSource' to plugin 'org.apache.kafka.connect.file.FileStreamSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'EnvVar' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'EnvVarConfigProvider' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'MirrorCheckpointConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'Boolean' to plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'StringConverter' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'IntegerConverter' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'LongConverter' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'DropHeaders' to plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'SimpleHeaderConverter' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'FileStreamSinkConnector' to plugin 'org.apache.kafka.connect.file.FileStreamSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'DirectoryConfigProvider' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'ShortConverter' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'BasicAuthSecurityRestExtension' to plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,578] INFO Added alias 'Simple' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'AllConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'MirrorSource' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'Directory' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'MirrorHeartbeat' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'FileStreamSourceConnector' to plugin 'org.apache.kafka.connect.file.FileStreamSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'BooleanConverter' to plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'HasHeaderKey' to plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'MirrorCheckpoint' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'None' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'TimestampRouter' to plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'Principal' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'All' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'JsonConverter' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'RegexRouter' to plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'ByteArray' to plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'NoneConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'FileConfigProvider' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'File' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'FloatConverter' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'ByteArrayConverter' to plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,579] INFO Added alias 'FileStreamSink' to plugin 'org.apache.kafka.connect.file.FileStreamSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,580] INFO Added alias 'DoubleConverter' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,580] INFO Added alias 'TopicNameMatches' to plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,580] INFO Added alias 'MirrorHeartbeatConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,580] INFO Added alias 'InsertHeader' to plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,580] INFO Added alias 'MirrorSourceConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,580] INFO Added alias 'PrincipalConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,580] INFO Added alias 'ValueToKey' to plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,580] INFO Added alias 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,580] INFO Added alias 'Filter' to plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:17:18,587] INFO StandaloneConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9093]
+	client.dns.lookup = use_all_dns_ips
+	config.providers = []
+	connector.client.config.override.policy = All
+	header.converter = class org.apache.kafka.connect.storage.SimpleHeaderConverter
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	listeners = [http://:8083]
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	offset.flush.interval.ms = 10000
+	offset.flush.timeout.ms = 5000
+	offset.storage.file.filename = /tmp/connect.offsets
+	plugin.discovery = hybrid_warn
+	plugin.path = [libs/connect-file-3.7.0.jar]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	task.shutdown.graceful.timeout.ms = 5000
+	topic.creation.enable = true
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.standalone.StandaloneConfig:370)
+[2024-04-26 16:17:18,587] INFO Creating Kafka admin client (org.apache.kafka.connect.runtime.WorkerConfig:283)
+[2024-04-26 16:17:18,590] INFO AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9093]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:370)
+[2024-04-26 16:17:18,637] INFO These configurations '[offset.flush.interval.ms, key.converter.schemas.enable, offset.storage.file.filename, value.converter.schemas.enable, plugin.path, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:379)
+[2024-04-26 16:17:18,638] INFO Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-26 16:17:18,638] INFO Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-26 16:17:18,638] INFO Kafka startTimeMs: 1714166238637 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-26 16:17:18,881] INFO Kafka cluster ID: ngzvjXfzQLmrjzH7Vu3M2A (org.apache.kafka.connect.runtime.WorkerConfig:300)
+[2024-04-26 16:17:18,882] INFO App info kafka.admin.client for adminclient-1 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-26 16:17:18,886] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-26 16:17:18,886] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-26 16:17:18,886] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-26 16:17:18,889] INFO PublicConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	listeners = [http://:8083]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+ (org.apache.kafka.connect.runtime.rest.RestServerConfig$PublicConfig:370)
+[2024-04-26 16:17:18,895] INFO Logging initialized @1530ms to org.eclipse.jetty.util.log.Slf4jLog (org.eclipse.jetty.util.log:170)
+[2024-04-26 16:17:18,922] INFO Added connector for http://:8083 (org.apache.kafka.connect.runtime.rest.RestServer:111)
+[2024-04-26 16:17:18,923] INFO Initializing REST server (org.apache.kafka.connect.runtime.rest.RestServer:182)
+[2024-04-26 16:17:18,936] INFO jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 11.0.22+7-post-Ubuntu-0ubuntu222.04.1 (org.eclipse.jetty.server.Server:375)
+[2024-04-26 16:17:18,955] INFO Started http_8083@25b52284{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:333)
+[2024-04-26 16:17:18,955] INFO Started @1589ms (org.eclipse.jetty.server.Server:415)
+[2024-04-26 16:17:18,970] INFO Advertised URI: http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-26 16:17:18,970] INFO REST server listening at http://127.0.1.1:8083/, advertising URL http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:202)
+[2024-04-26 16:17:18,970] INFO Advertised URI: http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-26 16:17:18,971] INFO REST admin endpoints at http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:205)
+[2024-04-26 16:17:18,971] INFO Advertised URI: http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-26 16:17:18,971] INFO Setting up All Policy for ConnectorClientConfigOverride. This will allow all client configurations to be overridden (org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy:44)
+[2024-04-26 16:17:18,973] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-26 16:17:18,981] INFO Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-26 16:17:18,981] INFO Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-26 16:17:18,981] INFO Kafka startTimeMs: 1714166238981 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-26 16:17:18,985] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-26 16:17:18,985] INFO JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-26 16:17:18,991] INFO Kafka Connect worker initialization took 1365ms (org.apache.kafka.connect.cli.AbstractConnectCli:141)
+[2024-04-26 16:17:18,991] INFO Kafka Connect starting (org.apache.kafka.connect.runtime.Connect:51)
+[2024-04-26 16:17:18,992] INFO Herder starting (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:107)
+[2024-04-26 16:17:18,993] INFO Worker starting (org.apache.kafka.connect.runtime.Worker:231)
+[2024-04-26 16:17:18,993] INFO Starting FileOffsetBackingStore with file /tmp/connect.offsets (org.apache.kafka.connect.storage.FileOffsetBackingStore:63)
+[2024-04-26 16:17:19,009] INFO Worker started (org.apache.kafka.connect.runtime.Worker:241)
+[2024-04-26 16:17:19,009] INFO Herder started (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:110)
+[2024-04-26 16:17:19,009] INFO Initializing REST resources (org.apache.kafka.connect.runtime.rest.RestServer:209)
+[2024-04-26 16:17:19,032] INFO Adding admin resources to main listener (org.apache.kafka.connect.runtime.rest.RestServer:227)
+[2024-04-26 16:17:19,058] INFO DefaultSessionIdManager workerName=node0 (org.eclipse.jetty.server.session:334)
+[2024-04-26 16:17:19,058] INFO No SessionScavenger set, using defaults (org.eclipse.jetty.server.session:339)
+[2024-04-26 16:17:19,059] INFO node0 Scavenging every 660000ms (org.eclipse.jetty.server.session:132)
+[2024-04-26 16:17:19,356] INFO Started o.e.j.s.ServletContextHandler@78b612c6{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler:921)
+[2024-04-26 16:17:19,356] INFO REST resources initialized; server is started and ready to handle requests (org.apache.kafka.connect.runtime.rest.RestServer:302)
+[2024-04-26 16:17:19,356] INFO Kafka Connect started (org.apache.kafka.connect.runtime.Connect:57)
+[2024-04-26 16:17:19,367] INFO AbstractConfig values: 
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-26 16:17:19,377] INFO [local-file-source|worker] Creating connector local-file-source of type FileStreamSource (org.apache.kafka.connect.runtime.Worker:309)
+[2024-04-26 16:17:19,378] INFO [local-file-source|worker] SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:370)
+[2024-04-26 16:17:19,379] INFO [local-file-source|worker] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-26 16:17:19,382] INFO [local-file-source|worker] Instantiated connector local-file-source with version 3.7.0 of type class org.apache.kafka.connect.file.FileStreamSourceConnector (org.apache.kafka.connect.runtime.Worker:331)
+[2024-04-26 16:17:19,383] INFO [local-file-source|worker] Finished creating connector local-file-source (org.apache.kafka.connect.runtime.Worker:352)
+[2024-04-26 16:17:19,384] INFO [local-file-source|worker] AbstractConfig values: 
+	batch.size = 2000
+	file = test.txt
+	topic = connect-test
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-26 16:17:19,384] INFO [local-file-source|worker] Starting file source connector reading from test.txt (org.apache.kafka.connect.file.FileStreamSourceConnector:69)
+[2024-04-26 16:17:19,385] INFO SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:370)
+[2024-04-26 16:17:19,385] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-26 16:17:19,388] INFO [local-file-source|task-0] Creating task local-file-source-0 (org.apache.kafka.connect.runtime.Worker:612)
+[2024-04-26 16:17:19,389] INFO [local-file-source|task-0] ConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig:370)
+[2024-04-26 16:17:19,390] INFO [local-file-source|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-26 16:17:19,390] INFO [local-file-source|task-0] TaskConfig values: 
+	task.class = class org.apache.kafka.connect.file.FileStreamSourceTask
+ (org.apache.kafka.connect.runtime.TaskConfig:370)
+[2024-04-26 16:17:19,390] INFO [local-file-source|task-0] Instantiated task local-file-source-0 with version 3.7.0 of type org.apache.kafka.connect.file.FileStreamSourceTask (org.apache.kafka.connect.runtime.Worker:626)
+[2024-04-26 16:17:19,391] INFO [local-file-source|task-0] JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = true
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-26 16:17:19,391] INFO [local-file-source|task-0] Set up the key converter class org.apache.kafka.connect.json.JsonConverter for task local-file-source-0 using the worker config (org.apache.kafka.connect.runtime.Worker:639)
+[2024-04-26 16:17:19,391] INFO [local-file-source|task-0] JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = true
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-26 16:17:19,391] INFO [local-file-source|task-0] Set up the value converter class org.apache.kafka.connect.json.JsonConverter for task local-file-source-0 using the worker config (org.apache.kafka.connect.runtime.Worker:645)
+[2024-04-26 16:17:19,391] INFO [local-file-source|task-0] Set up the header converter class org.apache.kafka.connect.storage.SimpleHeaderConverter for task local-file-source-0 using the worker config (org.apache.kafka.connect.runtime.Worker:652)
+[2024-04-26 16:17:19,394] INFO [local-file-source|task-0] SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:370)
+[2024-04-26 16:17:19,394] INFO [local-file-source|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-26 16:17:19,394] INFO [local-file-source|task-0] Initializing: org.apache.kafka.connect.runtime.TransformationChain{} (org.apache.kafka.connect.runtime.Worker:1842)
+[2024-04-26 16:17:19,397] INFO [local-file-source|task-0] ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9093]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = connector-producer-local-file-source-0
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 9223372036854775807
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+ (org.apache.kafka.clients.producer.ProducerConfig:370)
+[2024-04-26 16:17:19,414] INFO [local-file-source|task-0] initializing Kafka metrics collector (org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector:297)
+[2024-04-26 16:17:19,430] INFO [local-file-source|task-0] These configurations '[metrics.context.connect.kafka.cluster.id]' were supplied but are not used yet. (org.apache.kafka.clients.producer.ProducerConfig:379)
+[2024-04-26 16:17:19,430] INFO [local-file-source|task-0] Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-26 16:17:19,431] INFO [local-file-source|task-0] Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-26 16:17:19,431] INFO [local-file-source|task-0] Kafka startTimeMs: 1714166239430 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-26 16:17:19,440] INFO [local-file-source|task-0] AbstractConfig values: 
+	batch.size = 2000
+	file = test.txt
+	topic = connect-test
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-26 16:17:19,440] INFO Created connector local-file-source (org.apache.kafka.connect.cli.ConnectStandalone:87)
+[2024-04-26 16:17:19,440] INFO [local-file-source|task-0] WorkerSourceTask{id=local-file-source-0} Source task finished initialization and start (org.apache.kafka.connect.runtime.AbstractWorkerSourceTask:281)
+[2024-04-26 16:17:19,441] INFO [local-file-source|task-0] [Producer clientId=connector-producer-local-file-source-0] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw) (org.apache.kafka.clients.Metadata:349)
+[2024-04-26 16:17:19,441] INFO AbstractConfig values: 
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-26 16:17:19,445] INFO [local-file-sink|worker] Creating connector local-file-sink of type FileStreamSink (org.apache.kafka.connect.runtime.Worker:309)
+[2024-04-26 16:17:19,445] INFO [local-file-sink|worker] SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [connect-test]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:370)
+[2024-04-26 16:17:19,446] INFO [local-file-sink|worker] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [connect-test]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-26 16:17:19,446] INFO [local-file-sink|worker] Instantiated connector local-file-sink with version 3.7.0 of type class org.apache.kafka.connect.file.FileStreamSinkConnector (org.apache.kafka.connect.runtime.Worker:331)
+[2024-04-26 16:17:19,446] INFO [local-file-sink|worker] Finished creating connector local-file-sink (org.apache.kafka.connect.runtime.Worker:352)
+[2024-04-26 16:17:19,447] INFO [local-file-sink|worker] AbstractConfig values: 
+	file = test.sink.txt
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-26 16:17:19,447] INFO [local-file-sink|worker] Starting file sink connector writing to test.sink.txt (org.apache.kafka.connect.file.FileStreamSinkConnector:57)
+[2024-04-26 16:17:19,448] INFO SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [connect-test]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:370)
+[2024-04-26 16:17:19,448] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [connect-test]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-26 16:17:19,449] INFO [local-file-sink|task-0] Creating task local-file-sink-0 (org.apache.kafka.connect.runtime.Worker:612)
+[2024-04-26 16:17:19,450] INFO [local-file-sink|task-0] ConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig:370)
+[2024-04-26 16:17:19,450] INFO [local-file-sink|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-26 16:17:19,450] INFO [local-file-sink|task-0] TaskConfig values: 
+	task.class = class org.apache.kafka.connect.file.FileStreamSinkTask
+ (org.apache.kafka.connect.runtime.TaskConfig:370)
+[2024-04-26 16:17:19,450] INFO [local-file-sink|task-0] Instantiated task local-file-sink-0 with version 3.7.0 of type org.apache.kafka.connect.file.FileStreamSinkTask (org.apache.kafka.connect.runtime.Worker:626)
+[2024-04-26 16:17:19,450] INFO [local-file-sink|task-0] JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = true
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-26 16:17:19,450] INFO [local-file-sink|task-0] Set up the key converter class org.apache.kafka.connect.json.JsonConverter for task local-file-sink-0 using the worker config (org.apache.kafka.connect.runtime.Worker:639)
+[2024-04-26 16:17:19,451] INFO [local-file-sink|task-0] JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = true
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-26 16:17:19,451] INFO [local-file-sink|task-0] Set up the value converter class org.apache.kafka.connect.json.JsonConverter for task local-file-sink-0 using the worker config (org.apache.kafka.connect.runtime.Worker:645)
+[2024-04-26 16:17:19,451] INFO [local-file-sink|task-0] Set up the header converter class org.apache.kafka.connect.storage.SimpleHeaderConverter for task local-file-sink-0 using the worker config (org.apache.kafka.connect.runtime.Worker:652)
+[2024-04-26 16:17:19,451] INFO [local-file-sink|task-0] Initializing: org.apache.kafka.connect.runtime.TransformationChain{} (org.apache.kafka.connect.runtime.Worker:1799)
+[2024-04-26 16:17:19,451] INFO [local-file-sink|task-0] SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [connect-test]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:370)
+[2024-04-26 16:17:19,451] INFO [local-file-sink|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [connect-test]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-26 16:17:19,453] INFO [local-file-source|task-0] Increased buffer from 1024 to 2048 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:17:19,453] INFO [local-file-sink|task-0] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9093]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = connector-consumer-local-file-sink-0
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = connect-local-file-sink
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig:370)
+[2024-04-26 16:17:19,453] INFO [local-file-source|task-0] Increased buffer from 2048 to 4096 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:17:19,461] INFO [local-file-source|task-0] Increased buffer from 4096 to 8192 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:17:19,462] INFO [local-file-source|task-0] Increased buffer from 8192 to 16384 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:17:19,462] INFO [local-file-source|task-0] Increased buffer from 16384 to 32768 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:17:19,464] INFO [local-file-sink|task-0] initializing Kafka metrics collector (org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector:297)
+[2024-04-26 16:17:19,466] INFO [local-file-source|task-0] Increased buffer from 32768 to 65536 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:17:19,468] INFO [local-file-source|task-0] Increased buffer from 65536 to 131072 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:17:19,476] INFO [local-file-source|task-0] Increased buffer from 131072 to 262144 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:17:19,482] INFO [local-file-source|task-0] Increased buffer from 262144 to 524288 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:17:19,496] INFO [local-file-sink|task-0] These configurations '[metrics.context.connect.kafka.cluster.id]' were supplied but are not used yet. (org.apache.kafka.clients.consumer.ConsumerConfig:379)
+[2024-04-26 16:17:19,496] INFO [local-file-sink|task-0] Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-26 16:17:19,496] INFO [local-file-sink|task-0] Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-26 16:17:19,496] INFO [local-file-sink|task-0] Kafka startTimeMs: 1714166239496 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-26 16:17:19,499] INFO Created connector local-file-sink (org.apache.kafka.connect.cli.ConnectStandalone:87)
+[2024-04-26 16:17:19,501] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Subscribed to topic(s): connect-test (org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer:475)
+[2024-04-26 16:17:19,501] INFO [local-file-source|task-0] Increased buffer from 524288 to 1048576 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:17:19,501] INFO [local-file-sink|task-0] AbstractConfig values: 
+	file = test.sink.txt
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-26 16:17:19,501] INFO [local-file-sink|task-0] WorkerSinkTask{id=local-file-sink-0} Sink task finished initialization and start (org.apache.kafka.connect.runtime.WorkerSinkTask:330)
+[2024-04-26 16:17:19,501] INFO [local-file-sink|task-0] WorkerSinkTask{id=local-file-sink-0} Executing sink task (org.apache.kafka.connect.runtime.WorkerSinkTask:214)
+[2024-04-26 16:17:19,509] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Error while fetching metadata with correlation id 2 : {connect-test=UNKNOWN_TOPIC_OR_PARTITION} (org.apache.kafka.clients.NetworkClient:1184)
+[2024-04-26 16:17:19,509] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw) (org.apache.kafka.clients.Metadata:349)
+[2024-04-26 16:17:19,512] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:936)
+[2024-04-26 16:17:19,514] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] (Re-)joining group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:604)
+[2024-04-26 16:17:19,525] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Request joining group due to: need to re-join with the given member-id: connector-consumer-local-file-sink-0-d85b91fc-adc5-4c35-8179-77b03a42a892 (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1102)
+[2024-04-26 16:17:19,525] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] (Re-)joining group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:604)
+[2024-04-26 16:17:19,527] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Successfully joined group with generation Generation{generationId=1, memberId='connector-consumer-local-file-sink-0-d85b91fc-adc5-4c35-8179-77b03a42a892', protocol='range'} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:665)
+[2024-04-26 16:17:19,635] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Error while fetching metadata with correlation id 8 : {connect-test=LEADER_NOT_AVAILABLE} (org.apache.kafka.clients.NetworkClient:1184)
+[2024-04-26 16:17:19,635] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Cluster ID: ngzvjXfzQLmrjzH7Vu3M2A (org.apache.kafka.clients.Metadata:349)
+[2024-04-26 16:17:19,638] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Finished assignment for group at generation 1: {connector-consumer-local-file-sink-0-d85b91fc-adc5-4c35-8179-77b03a42a892=Assignment(partitions=[])} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:659)
+[2024-04-26 16:17:19,644] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Successfully synced group in generation Generation{generationId=1, memberId='connector-consumer-local-file-sink-0-d85b91fc-adc5-4c35-8179-77b03a42a892', protocol='range'} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:842)
+[2024-04-26 16:17:19,645] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Notifying assignor about the new Assignment(partitions=[]) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:319)
+[2024-04-26 16:17:19,645] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Adding newly assigned partitions:  (org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker:56)
+[2024-04-26 16:17:19,738] INFO [local-file-source|task-0] [Producer clientId=connector-producer-local-file-source-0] Cluster ID: ngzvjXfzQLmrjzH7Vu3M2A (org.apache.kafka.clients.Metadata:349)
+[2024-04-26 16:17:19,788] ERROR [local-file-source|task-0] WorkerSourceTask{id=local-file-source-0} failed to send record to connect-test:  (org.apache.kafka.connect.runtime.AbstractWorkerSourceTask:422)
+org.apache.kafka.common.errors.RecordTooLargeException: The message is 2846969 bytes when serialized which is larger than 1048576, which is the value of the max.request.size configuration.
+[2024-04-26 16:17:19,857] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Request joining group due to: cached metadata has changed from (version3: {connect-test=[]}) at the beginning of the rebalance to (version4: {connect-test=[NO_RACKS]}) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1102)
+[2024-04-26 16:17:19,858] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Revoke previously assigned partitions  (org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker:78)
+[2024-04-26 16:17:19,859] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] (Re-)joining group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:604)
+[2024-04-26 16:17:19,862] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Successfully joined group with generation Generation{generationId=2, memberId='connector-consumer-local-file-sink-0-d85b91fc-adc5-4c35-8179-77b03a42a892', protocol='range'} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:665)
+[2024-04-26 16:17:19,864] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Finished assignment for group at generation 2: {connector-consumer-local-file-sink-0-d85b91fc-adc5-4c35-8179-77b03a42a892=Assignment(partitions=[connect-test-0])} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:659)
+[2024-04-26 16:17:19,867] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Successfully synced group in generation Generation{generationId=2, memberId='connector-consumer-local-file-sink-0-d85b91fc-adc5-4c35-8179-77b03a42a892', protocol='range'} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:842)
+[2024-04-26 16:17:19,868] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Notifying assignor about the new Assignment(partitions=[connect-test-0]) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:319)
+[2024-04-26 16:17:19,870] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Adding newly assigned partitions: connect-test-0 (org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker:56)
+[2024-04-26 16:17:19,872] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Found no committed offset for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1502)
+[2024-04-26 16:17:19,875] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Resetting offset for partition connect-test-0 to position FetchPosition{offset=0, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[ids4-Precision-5820-Tower:9092 (id: 0 rack: null)], epoch=0}}. (org.apache.kafka.clients.consumer.internals.SubscriptionState:396)
+[2024-04-26 16:17:24,790] INFO [local-file-source|task-0] WorkerSourceTask{id=local-file-source-0} Committing offsets for 118 acknowledged messages (org.apache.kafka.connect.runtime.WorkerSourceTask:233)
+[2024-04-26 16:17:24,802] ERROR [local-file-source|task-0] WorkerSourceTask{id=local-file-source-0} Task threw an uncaught and unrecoverable exception. Task is being killed and will not recover until manually restarted (org.apache.kafka.connect.runtime.WorkerTask:212)
+org.apache.kafka.connect.errors.ConnectException: Unrecoverable exception from producer send callback
+	at org.apache.kafka.connect.runtime.WorkerSourceTask.maybeThrowProducerSendException(WorkerSourceTask.java:340)
+	at org.apache.kafka.connect.runtime.WorkerSourceTask.prepareToSendRecord(WorkerSourceTask.java:133)
+	at org.apache.kafka.connect.runtime.AbstractWorkerSourceTask.sendRecords(AbstractWorkerSourceTask.java:411)
+	at org.apache.kafka.connect.runtime.AbstractWorkerSourceTask.execute(AbstractWorkerSourceTask.java:367)
+	at org.apache.kafka.connect.runtime.WorkerTask.doRun(WorkerTask.java:204)
+	at org.apache.kafka.connect.runtime.WorkerTask.run(WorkerTask.java:259)
+	at org.apache.kafka.connect.runtime.AbstractWorkerSourceTask.run(AbstractWorkerSourceTask.java:77)
+	at org.apache.kafka.connect.runtime.isolation.Plugins.lambda$withClassLoader$1(Plugins.java:237)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.RecordTooLargeException: The message is 2846969 bytes when serialized which is larger than 1048576, which is the value of the max.request.size configuration.
+[2024-04-26 16:17:24,803] INFO [local-file-source|task-0] [Producer clientId=connector-producer-local-file-source-0] Closing the Kafka producer with timeoutMillis = 30000 ms. (org.apache.kafka.clients.producer.KafkaProducer:1346)
+[2024-04-26 16:17:24,807] INFO [local-file-source|task-0] Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-26 16:17:24,808] INFO [local-file-source|task-0] Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-26 16:17:24,808] INFO [local-file-source|task-0] Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-26 16:17:24,808] INFO [local-file-source|task-0] Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-26 16:17:24,808] INFO [local-file-source|task-0] App info kafka.producer for connector-producer-local-file-source-0 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-26 16:17:37,470] INFO Kafka Connect stopping (org.apache.kafka.connect.runtime.Connect:67)
+[2024-04-26 16:17:37,471] INFO Stopping REST server (org.apache.kafka.connect.runtime.rest.RestServer:348)
+[2024-04-26 16:17:37,487] INFO Stopped http_8083@25b52284{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:383)
+[2024-04-26 16:17:37,487] INFO node0 Stopped scavenging (org.eclipse.jetty.server.session:149)
+[2024-04-26 16:17:37,490] INFO Stopped o.e.j.s.ServletContextHandler@78b612c6{/,null,STOPPED} (org.eclipse.jetty.server.handler.ContextHandler:1159)
+[2024-04-26 16:17:37,491] INFO REST server stopped (org.apache.kafka.connect.runtime.rest.RestServer:377)
+[2024-04-26 16:17:37,491] INFO Herder stopping (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:115)
+[2024-04-26 16:17:37,492] INFO [local-file-source|task-0] Stopping task local-file-source-0 (org.apache.kafka.connect.runtime.Worker:1009)
+[2024-04-26 16:17:37,494] INFO [local-file-source|worker] Stopping connector local-file-source (org.apache.kafka.connect.runtime.Worker:420)
+[2024-04-26 16:17:37,494] INFO [local-file-source|worker] Scheduled shutdown for WorkerConnector{id=local-file-source} (org.apache.kafka.connect.runtime.WorkerConnector:267)
+[2024-04-26 16:17:37,494] INFO [local-file-source|worker] Completed shutdown for WorkerConnector{id=local-file-source} (org.apache.kafka.connect.runtime.WorkerConnector:287)
+[2024-04-26 16:17:37,495] INFO [local-file-sink|task-0] Stopping task local-file-sink-0 (org.apache.kafka.connect.runtime.Worker:1009)
+[2024-04-26 16:17:37,497] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Revoke previously assigned partitions connect-test-0 (org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker:78)
+[2024-04-26 16:17:37,497] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Member connector-consumer-local-file-sink-0-d85b91fc-adc5-4c35-8179-77b03a42a892 sending LeaveGroup request to coordinator localhost:9092 (id: 2147483646 rack: null) due to the consumer is being closed (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1163)
+[2024-04-26 16:17:37,498] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Resetting generation and member id due to: consumer pro-actively leaving the group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1055)
+[2024-04-26 16:17:37,498] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Request joining group due to: consumer pro-actively leaving the group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1102)
+[2024-04-26 16:17:37,518] INFO [local-file-sink|task-0] Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-26 16:17:37,518] INFO [local-file-sink|task-0] Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-26 16:17:37,519] INFO [local-file-sink|task-0] Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-26 16:17:37,519] INFO [local-file-sink|task-0] Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-26 16:17:37,522] INFO [local-file-sink|task-0] App info kafka.consumer for connector-consumer-local-file-sink-0 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-26 16:17:37,523] INFO [local-file-sink|worker] Stopping connector local-file-sink (org.apache.kafka.connect.runtime.Worker:420)
+[2024-04-26 16:17:37,523] INFO [local-file-sink|worker] Scheduled shutdown for WorkerConnector{id=local-file-sink} (org.apache.kafka.connect.runtime.WorkerConnector:267)
+[2024-04-26 16:17:37,524] INFO [local-file-sink|worker] Completed shutdown for WorkerConnector{id=local-file-sink} (org.apache.kafka.connect.runtime.WorkerConnector:287)
+[2024-04-26 16:17:37,524] INFO Worker stopping (org.apache.kafka.connect.runtime.Worker:248)
+[2024-04-26 16:17:37,525] INFO Stopped FileOffsetBackingStore (org.apache.kafka.connect.storage.FileOffsetBackingStore:71)
+[2024-04-26 16:17:37,525] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-26 16:17:37,525] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-26 16:17:37,525] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-26 16:17:37,525] INFO App info kafka.connect for 127.0.1.1:8083 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-26 16:17:37,525] INFO Worker stopped (org.apache.kafka.connect.runtime.Worker:269)
+[2024-04-26 16:17:37,526] INFO Herder stopped (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:126)
+[2024-04-26 16:17:37,526] INFO Kafka Connect stopped (org.apache.kafka.connect.runtime.Connect:72)
+[2024-04-26 16:19:25,940] INFO Kafka Connect worker initializing ... (org.apache.kafka.connect.cli.AbstractConnectCli:114)
+[2024-04-26 16:19:25,943] INFO WorkerInfo values: 
+	jvm.args = -Xms256M, -Xmx2G, -XX:+UseG1GC, -XX:MaxGCPauseMillis=20, -XX:InitiatingHeapOccupancyPercent=35, -XX:+ExplicitGCInvokesConcurrent, -XX:MaxInlineLevel=15, -Djava.awt.headless=true, -Dcom.sun.management.jmxremote, -Dcom.sun.management.jmxremote.authenticate=false, -Dcom.sun.management.jmxremote.ssl=false, -Dkafka.logs.dir=/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../logs, -Dlog4j.configuration=file:bin/../config/connect-log4j.properties
+	jvm.spec = Ubuntu, OpenJDK 64-Bit Server VM, 11.0.22, 11.0.22+7-post-Ubuntu-0ubuntu222.04.1
+	jvm.classpath = /home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/activation-1.1.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/aopalliance-repackaged-2.6.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/argparse4j-0.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/audience-annotations-0.12.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/caffeine-2.9.3.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/checker-qual-3.19.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/commons-beanutils-1.9.4.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/commons-cli-1.4.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/commons-collections-3.2.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/commons-digester-2.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/commons-io-2.11.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/commons-lang3-3.8.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/commons-logging-1.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/commons-validator-1.7.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/connect-api-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/connect-basic-auth-extension-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/connect-json-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/connect-mirror-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/connect-mirror-client-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/connect-runtime-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/connect-transforms-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/error_prone_annotations-2.10.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/hk2-api-2.6.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/hk2-locator-2.6.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/hk2-utils-2.6.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-annotations-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-core-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-databind-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-dataformat-csv-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-datatype-jdk8-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-jaxrs-base-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-jaxrs-json-provider-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-module-jaxb-annotations-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jackson-module-scala_2.13-2.16.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jakarta.activation-api-1.2.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jakarta.annotation-api-1.3.5.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jakarta.inject-2.6.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jakarta.validation-api-2.0.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jakarta.ws.rs-api-2.1.6.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jakarta.xml.bind-api-2.3.3.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/javassist-3.29.2-GA.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/javax.activation-api-1.2.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/javax.annotation-api-1.3.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/javax.servlet-api-3.1.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/javax.ws.rs-api-2.1.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jaxb-api-2.3.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jersey-client-2.39.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jersey-common-2.39.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jersey-container-servlet-2.39.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jersey-container-servlet-core-2.39.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jersey-hk2-2.39.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jersey-server-2.39.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-client-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-continuation-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-http-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-io-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-security-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-server-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-servlet-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-servlets-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-util-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jetty-util-ajax-9.4.53.v20231009.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jline-3.22.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jopt-simple-5.0.4.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jose4j-0.9.4.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/jsr305-3.0.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka_2.13-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-clients-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-group-coordinator-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-log4j-appender-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-metadata-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-raft-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-server-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-server-common-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-shell-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-storage-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-storage-api-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-streams-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-streams-examples-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-streams-scala_2.13-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-streams-test-utils-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-tools-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/kafka-tools-api-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/lz4-java-1.8.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/maven-artifact-3.8.8.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/metrics-core-2.2.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/metrics-core-4.1.12.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-buffer-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-codec-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-common-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-handler-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-resolver-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-transport-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-transport-classes-epoll-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-transport-native-epoll-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/netty-transport-native-unix-common-4.1.100.Final.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/opentelemetry-proto-1.0.0-alpha.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/osgi-resource-locator-1.0.3.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/paranamer-2.8.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/pcollections-4.0.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/plexus-utils-3.3.1.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/protobuf-java-3.23.4.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/reflections-0.10.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/reload4j-1.2.25.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/rocksdbjni-7.9.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/scala-collection-compat_2.13-2.10.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/scala-java8-compat_2.13-1.0.2.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/scala-library-2.13.12.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/scala-logging_2.13-3.9.4.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/scala-reflect-2.13.12.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/slf4j-api-1.7.36.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/slf4j-reload4j-1.7.36.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/snappy-java-1.1.10.5.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/swagger-annotations-2.2.8.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/trogdor-3.7.0.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/zookeeper-3.8.3.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/zookeeper-jute-3.8.3.jar:/home/ids4/Downloads/kafka_2.13-3.7.0/bin/../libs/zstd-jni-1.5.5-6.jar
+	os.spec = Linux, amd64, 6.5.0-27-generic
+	os.vcpus = 20
+ (org.apache.kafka.connect.runtime.WorkerInfo:71)
+[2024-04-26 16:19:25,944] INFO Scanning for plugin classes. This might take a moment ... (org.apache.kafka.connect.cli.AbstractConnectCli:120)
+[2024-04-26 16:19:25,957] INFO Loading plugin from: /home/ids4/Downloads/kafka_2.13-3.7.0/libs/connect-file-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-26 16:19:26,115] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/ids4/Downloads/kafka_2.13-3.7.0/libs/connect-file-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-26 16:19:26,115] INFO Loading plugin from: classpath (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-26 16:19:26,123] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69 (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-26 16:19:26,123] INFO Scanning plugins with ServiceLoaderScanner took 167 ms (org.apache.kafka.connect.runtime.isolation.PluginScanner:70)
+[2024-04-26 16:19:26,124] INFO Loading plugin from: /home/ids4/Downloads/kafka_2.13-3.7.0/libs/connect-file-3.7.0.jar (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-26 16:19:26,164] INFO Registered loader: PluginClassLoader{pluginLocation=file:/home/ids4/Downloads/kafka_2.13-3.7.0/libs/connect-file-3.7.0.jar} (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-26 16:19:26,165] INFO Loading plugin from: classpath (org.apache.kafka.connect.runtime.isolation.PluginScanner:75)
+[2024-04-26 16:19:26,888] INFO Registered loader: jdk.internal.loader.ClassLoaders$AppClassLoader@3d4eac69 (org.apache.kafka.connect.runtime.isolation.PluginScanner:80)
+[2024-04-26 16:19:26,888] INFO Scanning plugins with ReflectionScanner took 764 ms (org.apache.kafka.connect.runtime.isolation.PluginScanner:70)
+[2024-04-26 16:19:26,890] WARN All plugins have ServiceLoader manifests, consider reconfiguring plugin.discovery=service_load (org.apache.kafka.connect.runtime.isolation.Plugins:105)
+[2024-04-26 16:19:26,891] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,891] INFO Added plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,891] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,891] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,891] INFO Added plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,891] INFO Added plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,891] INFO Added plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,891] INFO Added plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,891] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,891] INFO Added plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,891] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,892] INFO Added plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,892] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,892] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,892] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,892] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,892] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,892] INFO Added plugin 'org.apache.kafka.connect.transforms.ReplaceField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,892] INFO Added plugin 'org.apache.kafka.connect.transforms.SetSchemaMetadata$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,892] INFO Added plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,892] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,892] INFO Added plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,892] INFO Added plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,892] INFO Added plugin 'org.apache.kafka.connect.transforms.Cast$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,892] INFO Added plugin 'org.apache.kafka.connect.transforms.Flatten$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,892] INFO Added plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampConverter$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.connect.transforms.HeaderFrom$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Value' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.connect.file.FileStreamSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,893] INFO Added plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,894] INFO Added plugin 'org.apache.kafka.connect.transforms.MaskField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,894] INFO Added plugin 'org.apache.kafka.connect.transforms.ExtractField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,894] INFO Added plugin 'org.apache.kafka.connect.transforms.InsertField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,894] INFO Added plugin 'org.apache.kafka.connect.file.FileStreamSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,894] INFO Added plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,894] INFO Added plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,894] INFO Added plugin 'org.apache.kafka.connect.transforms.HoistField$Key' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,894] INFO Added plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:105)
+[2024-04-26 16:19:26,895] INFO Added alias 'RecordIsTombstone' to plugin 'org.apache.kafka.connect.transforms.predicates.RecordIsTombstone' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,895] INFO Added alias 'String' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,895] INFO Added alias 'FileStreamSource' to plugin 'org.apache.kafka.connect.file.FileStreamSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,895] INFO Added alias 'EnvVar' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,895] INFO Added alias 'EnvVarConfigProvider' to plugin 'org.apache.kafka.common.config.provider.EnvVarConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'MirrorCheckpointConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'Boolean' to plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'Json' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'StringConverter' to plugin 'org.apache.kafka.connect.storage.StringConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'IntegerConverter' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'Float' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'LongConverter' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'DropHeaders' to plugin 'org.apache.kafka.connect.transforms.DropHeaders' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'SimpleHeaderConverter' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'FileStreamSinkConnector' to plugin 'org.apache.kafka.connect.file.FileStreamSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'DirectoryConfigProvider' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'ShortConverter' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'BasicAuthSecurityRestExtension' to plugin 'org.apache.kafka.connect.rest.basic.auth.extension.BasicAuthSecurityRestExtension' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'Simple' to plugin 'org.apache.kafka.connect.storage.SimpleHeaderConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'AllConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'MirrorSource' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'Directory' to plugin 'org.apache.kafka.common.config.provider.DirectoryConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'MirrorHeartbeat' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,896] INFO Added alias 'FileStreamSourceConnector' to plugin 'org.apache.kafka.connect.file.FileStreamSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'BooleanConverter' to plugin 'org.apache.kafka.connect.converters.BooleanConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'HasHeaderKey' to plugin 'org.apache.kafka.connect.transforms.predicates.HasHeaderKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'MirrorCheckpoint' to plugin 'org.apache.kafka.connect.mirror.MirrorCheckpointConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'None' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'TimestampRouter' to plugin 'org.apache.kafka.connect.transforms.TimestampRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'Principal' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'All' to plugin 'org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'JsonConverter' to plugin 'org.apache.kafka.connect.json.JsonConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'RegexRouter' to plugin 'org.apache.kafka.connect.transforms.RegexRouter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'ByteArray' to plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'NoneConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.NoneConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'Short' to plugin 'org.apache.kafka.connect.converters.ShortConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'Double' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'FileConfigProvider' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'Long' to plugin 'org.apache.kafka.connect.converters.LongConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'File' to plugin 'org.apache.kafka.common.config.provider.FileConfigProvider' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'FloatConverter' to plugin 'org.apache.kafka.connect.converters.FloatConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'ByteArrayConverter' to plugin 'org.apache.kafka.connect.converters.ByteArrayConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'FileStreamSink' to plugin 'org.apache.kafka.connect.file.FileStreamSinkConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'DoubleConverter' to plugin 'org.apache.kafka.connect.converters.DoubleConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,897] INFO Added alias 'TopicNameMatches' to plugin 'org.apache.kafka.connect.transforms.predicates.TopicNameMatches' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,898] INFO Added alias 'MirrorHeartbeatConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorHeartbeatConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,898] INFO Added alias 'InsertHeader' to plugin 'org.apache.kafka.connect.transforms.InsertHeader' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,898] INFO Added alias 'MirrorSourceConnector' to plugin 'org.apache.kafka.connect.mirror.MirrorSourceConnector' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,898] INFO Added alias 'PrincipalConnectorClientConfigOverridePolicy' to plugin 'org.apache.kafka.connect.connector.policy.PrincipalConnectorClientConfigOverridePolicy' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,898] INFO Added alias 'ValueToKey' to plugin 'org.apache.kafka.connect.transforms.ValueToKey' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,898] INFO Added alias 'Integer' to plugin 'org.apache.kafka.connect.converters.IntegerConverter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,898] INFO Added alias 'Filter' to plugin 'org.apache.kafka.connect.transforms.Filter' (org.apache.kafka.connect.runtime.isolation.DelegatingClassLoader:109)
+[2024-04-26 16:19:26,905] INFO StandaloneConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	auto.include.jmx.reporter = true
+	bootstrap.servers = [localhost:9093]
+	client.dns.lookup = use_all_dns_ips
+	config.providers = []
+	connector.client.config.override.policy = All
+	header.converter = class org.apache.kafka.connect.storage.SimpleHeaderConverter
+	key.converter = class org.apache.kafka.connect.json.JsonConverter
+	listeners = [http://:8083]
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	offset.flush.interval.ms = 10000
+	offset.flush.timeout.ms = 5000
+	offset.storage.file.filename = /tmp/connect.offsets
+	plugin.discovery = hybrid_warn
+	plugin.path = [libs/connect-file-3.7.0.jar]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	task.shutdown.graceful.timeout.ms = 5000
+	topic.creation.enable = true
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+	value.converter = class org.apache.kafka.connect.json.JsonConverter
+ (org.apache.kafka.connect.runtime.standalone.StandaloneConfig:370)
+[2024-04-26 16:19:26,905] INFO Creating Kafka admin client (org.apache.kafka.connect.runtime.WorkerConfig:283)
+[2024-04-26 16:19:26,908] INFO AdminClientConfig values: 
+	auto.include.jmx.reporter = true
+	bootstrap.controllers = []
+	bootstrap.servers = [localhost:9093]
+	client.dns.lookup = use_all_dns_ips
+	client.id = 
+	connections.max.idle.ms = 300000
+	default.api.timeout.ms = 60000
+	enable.metrics.push = true
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+ (org.apache.kafka.clients.admin.AdminClientConfig:370)
+[2024-04-26 16:19:26,955] INFO These configurations '[offset.flush.interval.ms, key.converter.schemas.enable, offset.storage.file.filename, value.converter.schemas.enable, plugin.path, value.converter, key.converter]' were supplied but are not used yet. (org.apache.kafka.clients.admin.AdminClientConfig:379)
+[2024-04-26 16:19:26,956] INFO Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-26 16:19:26,956] INFO Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-26 16:19:26,956] INFO Kafka startTimeMs: 1714166366956 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-26 16:19:27,186] INFO Kafka cluster ID: ngzvjXfzQLmrjzH7Vu3M2A (org.apache.kafka.connect.runtime.WorkerConfig:300)
+[2024-04-26 16:19:27,187] INFO App info kafka.admin.client for adminclient-1 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-26 16:19:27,191] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-26 16:19:27,191] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-26 16:19:27,191] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-26 16:19:27,193] INFO PublicConfig values: 
+	access.control.allow.methods = 
+	access.control.allow.origin = 
+	admin.listeners = null
+	listeners = [http://:8083]
+	response.http.headers.config = 
+	rest.advertised.host.name = null
+	rest.advertised.listener = null
+	rest.advertised.port = null
+	rest.extension.classes = []
+	ssl.cipher.suites = null
+	ssl.client.auth = none
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	topic.tracking.allow.reset = true
+	topic.tracking.enable = true
+ (org.apache.kafka.connect.runtime.rest.RestServerConfig$PublicConfig:370)
+[2024-04-26 16:19:27,200] INFO Logging initialized @1514ms to org.eclipse.jetty.util.log.Slf4jLog (org.eclipse.jetty.util.log:170)
+[2024-04-26 16:19:27,226] INFO Added connector for http://:8083 (org.apache.kafka.connect.runtime.rest.RestServer:111)
+[2024-04-26 16:19:27,226] INFO Initializing REST server (org.apache.kafka.connect.runtime.rest.RestServer:182)
+[2024-04-26 16:19:27,239] INFO jetty-9.4.53.v20231009; built: 2023-10-09T12:29:09.265Z; git: 27bde00a0b95a1d5bbee0eae7984f891d2d0f8c9; jvm 11.0.22+7-post-Ubuntu-0ubuntu222.04.1 (org.eclipse.jetty.server.Server:375)
+[2024-04-26 16:19:27,256] INFO Started http_8083@25b52284{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:333)
+[2024-04-26 16:19:27,256] INFO Started @1570ms (org.eclipse.jetty.server.Server:415)
+[2024-04-26 16:19:27,270] INFO Advertised URI: http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-26 16:19:27,270] INFO REST server listening at http://127.0.1.1:8083/, advertising URL http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:202)
+[2024-04-26 16:19:27,271] INFO Advertised URI: http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-26 16:19:27,271] INFO REST admin endpoints at http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:205)
+[2024-04-26 16:19:27,271] INFO Advertised URI: http://127.0.1.1:8083/ (org.apache.kafka.connect.runtime.rest.RestServer:406)
+[2024-04-26 16:19:27,271] INFO Setting up All Policy for ConnectorClientConfigOverride. This will allow all client configurations to be overridden (org.apache.kafka.connect.connector.policy.AllConnectorClientConfigOverridePolicy:44)
+[2024-04-26 16:19:27,272] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-26 16:19:27,281] INFO Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-26 16:19:27,281] INFO Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-26 16:19:27,281] INFO Kafka startTimeMs: 1714166367281 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-26 16:19:27,284] INFO JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-26 16:19:27,285] INFO JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = false
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-26 16:19:27,291] INFO Kafka Connect worker initialization took 1349ms (org.apache.kafka.connect.cli.AbstractConnectCli:141)
+[2024-04-26 16:19:27,291] INFO Kafka Connect starting (org.apache.kafka.connect.runtime.Connect:51)
+[2024-04-26 16:19:27,292] INFO Herder starting (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:107)
+[2024-04-26 16:19:27,292] INFO Worker starting (org.apache.kafka.connect.runtime.Worker:231)
+[2024-04-26 16:19:27,293] INFO Starting FileOffsetBackingStore with file /tmp/connect.offsets (org.apache.kafka.connect.storage.FileOffsetBackingStore:63)
+[2024-04-26 16:19:27,313] INFO Worker started (org.apache.kafka.connect.runtime.Worker:241)
+[2024-04-26 16:19:27,313] INFO Herder started (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:110)
+[2024-04-26 16:19:27,313] INFO Initializing REST resources (org.apache.kafka.connect.runtime.rest.RestServer:209)
+[2024-04-26 16:19:27,337] INFO Adding admin resources to main listener (org.apache.kafka.connect.runtime.rest.RestServer:227)
+[2024-04-26 16:19:27,364] INFO DefaultSessionIdManager workerName=node0 (org.eclipse.jetty.server.session:334)
+[2024-04-26 16:19:27,364] INFO No SessionScavenger set, using defaults (org.eclipse.jetty.server.session:339)
+[2024-04-26 16:19:27,365] INFO node0 Scavenging every 600000ms (org.eclipse.jetty.server.session:132)
+[2024-04-26 16:19:27,656] INFO Started o.e.j.s.ServletContextHandler@78b612c6{/,null,AVAILABLE} (org.eclipse.jetty.server.handler.ContextHandler:921)
+[2024-04-26 16:19:27,656] INFO REST resources initialized; server is started and ready to handle requests (org.apache.kafka.connect.runtime.rest.RestServer:302)
+[2024-04-26 16:19:27,656] INFO Kafka Connect started (org.apache.kafka.connect.runtime.Connect:57)
+[2024-04-26 16:19:27,672] INFO AbstractConfig values: 
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-26 16:19:27,680] INFO [local-file-source|worker] Creating connector local-file-source of type FileStreamSource (org.apache.kafka.connect.runtime.Worker:309)
+[2024-04-26 16:19:27,681] INFO [local-file-source|worker] SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:370)
+[2024-04-26 16:19:27,682] INFO [local-file-source|worker] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-26 16:19:27,685] INFO [local-file-source|worker] Instantiated connector local-file-source with version 3.7.0 of type class org.apache.kafka.connect.file.FileStreamSourceConnector (org.apache.kafka.connect.runtime.Worker:331)
+[2024-04-26 16:19:27,686] INFO [local-file-source|worker] Finished creating connector local-file-source (org.apache.kafka.connect.runtime.Worker:352)
+[2024-04-26 16:19:27,687] INFO [local-file-source|worker] AbstractConfig values: 
+	batch.size = 2000
+	file = test.txt
+	topic = connect-test
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-26 16:19:27,687] INFO [local-file-source|worker] Starting file source connector reading from test.txt (org.apache.kafka.connect.file.FileStreamSourceConnector:69)
+[2024-04-26 16:19:27,689] INFO SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:370)
+[2024-04-26 16:19:27,689] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-26 16:19:27,692] INFO [local-file-source|task-0] Creating task local-file-source-0 (org.apache.kafka.connect.runtime.Worker:612)
+[2024-04-26 16:19:27,693] INFO [local-file-source|task-0] ConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig:370)
+[2024-04-26 16:19:27,693] INFO [local-file-source|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-26 16:19:27,694] INFO [local-file-source|task-0] TaskConfig values: 
+	task.class = class org.apache.kafka.connect.file.FileStreamSourceTask
+ (org.apache.kafka.connect.runtime.TaskConfig:370)
+[2024-04-26 16:19:27,694] INFO [local-file-source|task-0] Instantiated task local-file-source-0 with version 3.7.0 of type org.apache.kafka.connect.file.FileStreamSourceTask (org.apache.kafka.connect.runtime.Worker:626)
+[2024-04-26 16:19:27,694] INFO [local-file-source|task-0] JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = true
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-26 16:19:27,695] INFO [local-file-source|task-0] Set up the key converter class org.apache.kafka.connect.json.JsonConverter for task local-file-source-0 using the worker config (org.apache.kafka.connect.runtime.Worker:639)
+[2024-04-26 16:19:27,695] INFO [local-file-source|task-0] JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = true
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-26 16:19:27,695] INFO [local-file-source|task-0] Set up the value converter class org.apache.kafka.connect.json.JsonConverter for task local-file-source-0 using the worker config (org.apache.kafka.connect.runtime.Worker:645)
+[2024-04-26 16:19:27,695] INFO [local-file-source|task-0] Set up the header converter class org.apache.kafka.connect.storage.SimpleHeaderConverter for task local-file-source-0 using the worker config (org.apache.kafka.connect.runtime.Worker:652)
+[2024-04-26 16:19:27,697] INFO [local-file-source|task-0] SourceConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SourceConnectorConfig:370)
+[2024-04-26 16:19:27,697] INFO [local-file-source|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSource
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	exactly.once.support = requested
+	header.converter = null
+	key.converter = null
+	name = local-file-source
+	offsets.storage.topic = null
+	predicates = []
+	tasks.max = 1
+	topic.creation.groups = []
+	transaction.boundary = poll
+	transaction.boundary.interval.ms = null
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-26 16:19:27,698] INFO [local-file-source|task-0] Initializing: org.apache.kafka.connect.runtime.TransformationChain{} (org.apache.kafka.connect.runtime.Worker:1842)
+[2024-04-26 16:19:27,701] INFO [local-file-source|task-0] ProducerConfig values: 
+	acks = -1
+	auto.include.jmx.reporter = true
+	batch.size = 16384
+	bootstrap.servers = [localhost:9093]
+	buffer.memory = 33554432
+	client.dns.lookup = use_all_dns_ips
+	client.id = connector-producer-local-file-source-0
+	compression.type = none
+	connections.max.idle.ms = 540000
+	delivery.timeout.ms = 2147483647
+	enable.idempotence = false
+	enable.metrics.push = true
+	interceptor.classes = []
+	key.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+	linger.ms = 0
+	max.block.ms = 9223372036854775807
+	max.in.flight.requests.per.connection = 1
+	max.request.size = 1048576
+	metadata.max.age.ms = 300000
+	metadata.max.idle.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partitioner.adaptive.partitioning.enable = true
+	partitioner.availability.timeout.ms = 0
+	partitioner.class = null
+	partitioner.ignore.keys = false
+	receive.buffer.bytes = 32768
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retries = 2147483647
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	transaction.timeout.ms = 60000
+	transactional.id = null
+	value.serializer = class org.apache.kafka.common.serialization.ByteArraySerializer
+ (org.apache.kafka.clients.producer.ProducerConfig:370)
+[2024-04-26 16:19:27,717] INFO [local-file-source|task-0] initializing Kafka metrics collector (org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector:297)
+[2024-04-26 16:19:27,732] INFO [local-file-source|task-0] These configurations '[metrics.context.connect.kafka.cluster.id]' were supplied but are not used yet. (org.apache.kafka.clients.producer.ProducerConfig:379)
+[2024-04-26 16:19:27,733] INFO [local-file-source|task-0] Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-26 16:19:27,733] INFO [local-file-source|task-0] Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-26 16:19:27,733] INFO [local-file-source|task-0] Kafka startTimeMs: 1714166367733 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-26 16:19:27,740] INFO [local-file-source|task-0] AbstractConfig values: 
+	batch.size = 2000
+	file = test.txt
+	topic = connect-test
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-26 16:19:27,740] INFO Created connector local-file-source (org.apache.kafka.connect.cli.ConnectStandalone:87)
+[2024-04-26 16:19:27,740] INFO [local-file-source|task-0] WorkerSourceTask{id=local-file-source-0} Source task finished initialization and start (org.apache.kafka.connect.runtime.AbstractWorkerSourceTask:281)
+[2024-04-26 16:19:27,741] INFO [local-file-source|task-0] [Producer clientId=connector-producer-local-file-source-0] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw) (org.apache.kafka.clients.Metadata:349)
+[2024-04-26 16:19:27,742] INFO AbstractConfig values: 
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-26 16:19:27,746] INFO [local-file-sink|worker] Creating connector local-file-sink of type FileStreamSink (org.apache.kafka.connect.runtime.Worker:309)
+[2024-04-26 16:19:27,746] INFO [local-file-sink|worker] SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [connect-test]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:370)
+[2024-04-26 16:19:27,746] INFO [local-file-sink|worker] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [connect-test]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-26 16:19:27,746] INFO [local-file-sink|worker] Instantiated connector local-file-sink with version 3.7.0 of type class org.apache.kafka.connect.file.FileStreamSinkConnector (org.apache.kafka.connect.runtime.Worker:331)
+[2024-04-26 16:19:27,747] INFO [local-file-sink|worker] Finished creating connector local-file-sink (org.apache.kafka.connect.runtime.Worker:352)
+[2024-04-26 16:19:27,747] INFO [local-file-sink|worker] AbstractConfig values: 
+	file = test.sink.txt
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-26 16:19:27,748] INFO [local-file-sink|worker] Starting file sink connector writing to test.sink.txt (org.apache.kafka.connect.file.FileStreamSinkConnector:57)
+[2024-04-26 16:19:27,748] INFO SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [connect-test]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:370)
+[2024-04-26 16:19:27,748] INFO EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [connect-test]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-26 16:19:27,750] INFO [local-file-sink|task-0] Creating task local-file-sink-0 (org.apache.kafka.connect.runtime.Worker:612)
+[2024-04-26 16:19:27,750] INFO [local-file-sink|task-0] ConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig:370)
+[2024-04-26 16:19:27,750] INFO [local-file-sink|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-26 16:19:27,750] INFO [local-file-sink|task-0] TaskConfig values: 
+	task.class = class org.apache.kafka.connect.file.FileStreamSinkTask
+ (org.apache.kafka.connect.runtime.TaskConfig:370)
+[2024-04-26 16:19:27,750] INFO [local-file-sink|task-0] Instantiated task local-file-sink-0 with version 3.7.0 of type org.apache.kafka.connect.file.FileStreamSinkTask (org.apache.kafka.connect.runtime.Worker:626)
+[2024-04-26 16:19:27,751] INFO [local-file-sink|task-0] JsonConverterConfig values: 
+	converter.type = key
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = true
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-26 16:19:27,751] INFO [local-file-source|task-0] Increased buffer from 1024 to 2048 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:19:27,751] INFO [local-file-sink|task-0] Set up the key converter class org.apache.kafka.connect.json.JsonConverter for task local-file-sink-0 using the worker config (org.apache.kafka.connect.runtime.Worker:639)
+[2024-04-26 16:19:27,751] INFO [local-file-source|task-0] Increased buffer from 2048 to 4096 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:19:27,751] INFO [local-file-sink|task-0] JsonConverterConfig values: 
+	converter.type = value
+	decimal.format = BASE64
+	replace.null.with.default = true
+	schemas.cache.size = 1000
+	schemas.enable = true
+ (org.apache.kafka.connect.json.JsonConverterConfig:370)
+[2024-04-26 16:19:27,751] INFO [local-file-sink|task-0] Set up the value converter class org.apache.kafka.connect.json.JsonConverter for task local-file-sink-0 using the worker config (org.apache.kafka.connect.runtime.Worker:645)
+[2024-04-26 16:19:27,751] INFO [local-file-sink|task-0] Set up the header converter class org.apache.kafka.connect.storage.SimpleHeaderConverter for task local-file-sink-0 using the worker config (org.apache.kafka.connect.runtime.Worker:652)
+[2024-04-26 16:19:27,752] INFO [local-file-sink|task-0] Initializing: org.apache.kafka.connect.runtime.TransformationChain{} (org.apache.kafka.connect.runtime.Worker:1799)
+[2024-04-26 16:19:27,752] INFO [local-file-sink|task-0] SinkConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [connect-test]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.SinkConnectorConfig:370)
+[2024-04-26 16:19:27,752] INFO [local-file-sink|task-0] EnrichedConnectorConfig values: 
+	config.action.reload = restart
+	connector.class = FileStreamSink
+	errors.deadletterqueue.context.headers.enable = false
+	errors.deadletterqueue.topic.name = 
+	errors.deadletterqueue.topic.replication.factor = 3
+	errors.log.enable = false
+	errors.log.include.messages = false
+	errors.retry.delay.max.ms = 60000
+	errors.retry.timeout = 0
+	errors.tolerance = none
+	header.converter = null
+	key.converter = null
+	name = local-file-sink
+	predicates = []
+	tasks.max = 1
+	topics = [connect-test]
+	topics.regex = 
+	transforms = []
+	value.converter = null
+ (org.apache.kafka.connect.runtime.ConnectorConfig$EnrichedConnectorConfig:370)
+[2024-04-26 16:19:27,752] INFO [local-file-source|task-0] Increased buffer from 4096 to 8192 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:19:27,753] INFO [local-file-source|task-0] Increased buffer from 8192 to 16384 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:19:27,754] INFO [local-file-sink|task-0] ConsumerConfig values: 
+	allow.auto.create.topics = true
+	auto.commit.interval.ms = 5000
+	auto.include.jmx.reporter = true
+	auto.offset.reset = earliest
+	bootstrap.servers = [localhost:9093]
+	check.crcs = true
+	client.dns.lookup = use_all_dns_ips
+	client.id = connector-consumer-local-file-sink-0
+	client.rack = 
+	connections.max.idle.ms = 540000
+	default.api.timeout.ms = 60000
+	enable.auto.commit = false
+	enable.metrics.push = true
+	exclude.internal.topics = true
+	fetch.max.bytes = 52428800
+	fetch.max.wait.ms = 500
+	fetch.min.bytes = 1
+	group.id = connect-local-file-sink
+	group.instance.id = null
+	group.protocol = classic
+	group.remote.assignor = null
+	heartbeat.interval.ms = 3000
+	interceptor.classes = []
+	internal.leave.group.on.close = true
+	internal.throw.on.fetch.stable.offset.unsupported = false
+	isolation.level = read_uncommitted
+	key.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+	max.partition.fetch.bytes = 1048576
+	max.poll.interval.ms = 300000
+	max.poll.records = 500
+	metadata.max.age.ms = 300000
+	metric.reporters = []
+	metrics.num.samples = 2
+	metrics.recording.level = INFO
+	metrics.sample.window.ms = 30000
+	partition.assignment.strategy = [class org.apache.kafka.clients.consumer.RangeAssignor, class org.apache.kafka.clients.consumer.CooperativeStickyAssignor]
+	receive.buffer.bytes = 65536
+	reconnect.backoff.max.ms = 1000
+	reconnect.backoff.ms = 50
+	request.timeout.ms = 30000
+	retry.backoff.max.ms = 1000
+	retry.backoff.ms = 100
+	sasl.client.callback.handler.class = null
+	sasl.jaas.config = null
+	sasl.kerberos.kinit.cmd = /usr/bin/kinit
+	sasl.kerberos.min.time.before.relogin = 60000
+	sasl.kerberos.service.name = null
+	sasl.kerberos.ticket.renew.jitter = 0.05
+	sasl.kerberos.ticket.renew.window.factor = 0.8
+	sasl.login.callback.handler.class = null
+	sasl.login.class = null
+	sasl.login.connect.timeout.ms = null
+	sasl.login.read.timeout.ms = null
+	sasl.login.refresh.buffer.seconds = 300
+	sasl.login.refresh.min.period.seconds = 60
+	sasl.login.refresh.window.factor = 0.8
+	sasl.login.refresh.window.jitter = 0.05
+	sasl.login.retry.backoff.max.ms = 10000
+	sasl.login.retry.backoff.ms = 100
+	sasl.mechanism = GSSAPI
+	sasl.oauthbearer.clock.skew.seconds = 30
+	sasl.oauthbearer.expected.audience = null
+	sasl.oauthbearer.expected.issuer = null
+	sasl.oauthbearer.jwks.endpoint.refresh.ms = 3600000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.max.ms = 10000
+	sasl.oauthbearer.jwks.endpoint.retry.backoff.ms = 100
+	sasl.oauthbearer.jwks.endpoint.url = null
+	sasl.oauthbearer.scope.claim.name = scope
+	sasl.oauthbearer.sub.claim.name = sub
+	sasl.oauthbearer.token.endpoint.url = null
+	security.protocol = PLAINTEXT
+	security.providers = null
+	send.buffer.bytes = 131072
+	session.timeout.ms = 45000
+	socket.connection.setup.timeout.max.ms = 30000
+	socket.connection.setup.timeout.ms = 10000
+	ssl.cipher.suites = null
+	ssl.enabled.protocols = [TLSv1.2, TLSv1.3]
+	ssl.endpoint.identification.algorithm = https
+	ssl.engine.factory.class = null
+	ssl.key.password = null
+	ssl.keymanager.algorithm = SunX509
+	ssl.keystore.certificate.chain = null
+	ssl.keystore.key = null
+	ssl.keystore.location = null
+	ssl.keystore.password = null
+	ssl.keystore.type = JKS
+	ssl.protocol = TLSv1.3
+	ssl.provider = null
+	ssl.secure.random.implementation = null
+	ssl.trustmanager.algorithm = PKIX
+	ssl.truststore.certificates = null
+	ssl.truststore.location = null
+	ssl.truststore.password = null
+	ssl.truststore.type = JKS
+	value.deserializer = class org.apache.kafka.common.serialization.ByteArrayDeserializer
+ (org.apache.kafka.clients.consumer.ConsumerConfig:370)
+[2024-04-26 16:19:27,754] INFO [local-file-source|task-0] Increased buffer from 16384 to 32768 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:19:27,756] INFO [local-file-source|task-0] Increased buffer from 32768 to 65536 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:19:27,758] INFO [local-file-source|task-0] Increased buffer from 65536 to 131072 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:19:27,761] INFO [local-file-source|task-0] Increased buffer from 131072 to 262144 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:19:27,762] INFO [local-file-sink|task-0] initializing Kafka metrics collector (org.apache.kafka.common.telemetry.internals.KafkaMetricsCollector:297)
+[2024-04-26 16:19:27,768] INFO [local-file-source|task-0] Increased buffer from 262144 to 524288 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:19:27,783] INFO [local-file-source|task-0] Increased buffer from 524288 to 1048576 (org.apache.kafka.connect.file.FileStreamSourceTask:170)
+[2024-04-26 16:19:27,790] INFO [local-file-sink|task-0] These configurations '[metrics.context.connect.kafka.cluster.id]' were supplied but are not used yet. (org.apache.kafka.clients.consumer.ConsumerConfig:379)
+[2024-04-26 16:19:27,790] INFO [local-file-sink|task-0] Kafka version: 3.7.0 (org.apache.kafka.common.utils.AppInfoParser:124)
+[2024-04-26 16:19:27,790] INFO [local-file-sink|task-0] Kafka commitId: 2ae524ed625438c5 (org.apache.kafka.common.utils.AppInfoParser:125)
+[2024-04-26 16:19:27,790] INFO [local-file-sink|task-0] Kafka startTimeMs: 1714166367790 (org.apache.kafka.common.utils.AppInfoParser:126)
+[2024-04-26 16:19:27,793] INFO Created connector local-file-sink (org.apache.kafka.connect.cli.ConnectStandalone:87)
+[2024-04-26 16:19:27,795] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Subscribed to topic(s): connect-test (org.apache.kafka.clients.consumer.internals.LegacyKafkaConsumer:475)
+[2024-04-26 16:19:27,795] INFO [local-file-sink|task-0] AbstractConfig values: 
+	file = test.sink.txt
+ (org.apache.kafka.common.config.AbstractConfig:370)
+[2024-04-26 16:19:27,795] INFO [local-file-sink|task-0] WorkerSinkTask{id=local-file-sink-0} Sink task finished initialization and start (org.apache.kafka.connect.runtime.WorkerSinkTask:330)
+[2024-04-26 16:19:27,795] INFO [local-file-sink|task-0] WorkerSinkTask{id=local-file-sink-0} Executing sink task (org.apache.kafka.connect.runtime.WorkerSinkTask:214)
+[2024-04-26 16:19:27,804] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Cluster ID: Some(5L6g3nShT-eMCtK--X86sw) (org.apache.kafka.clients.Metadata:349)
+[2024-04-26 16:19:27,805] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Discovered group coordinator localhost:9092 (id: 2147483646 rack: null) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:936)
+[2024-04-26 16:19:27,807] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] (Re-)joining group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:604)
+[2024-04-26 16:19:27,817] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Request joining group due to: need to re-join with the given member-id: connector-consumer-local-file-sink-0-b6b49e89-4f33-40c2-aadc-18dd1ce95c13 (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1102)
+[2024-04-26 16:19:27,818] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] (Re-)joining group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:604)
+[2024-04-26 16:19:27,819] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Successfully joined group with generation Generation{generationId=4, memberId='connector-consumer-local-file-sink-0-b6b49e89-4f33-40c2-aadc-18dd1ce95c13', protocol='range'} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:665)
+[2024-04-26 16:19:27,825] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Finished assignment for group at generation 4: {connector-consumer-local-file-sink-0-b6b49e89-4f33-40c2-aadc-18dd1ce95c13=Assignment(partitions=[connect-test-0])} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:659)
+[2024-04-26 16:19:27,830] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Successfully synced group in generation Generation{generationId=4, memberId='connector-consumer-local-file-sink-0-b6b49e89-4f33-40c2-aadc-18dd1ce95c13', protocol='range'} (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:842)
+[2024-04-26 16:19:27,830] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Notifying assignor about the new Assignment(partitions=[connect-test-0]) (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:319)
+[2024-04-26 16:19:27,832] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Adding newly assigned partitions: connect-test-0 (org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker:56)
+[2024-04-26 16:19:27,838] INFO [local-file-sink|task-0] Setting offset for partition connect-test-0 to the committed offset FetchPosition{offset=118, offsetEpoch=Optional.empty, currentLeader=LeaderAndEpoch{leader=Optional[localhost:9092 (id: 1 rack: null)], epoch=0}} (org.apache.kafka.clients.consumer.internals.ConsumerUtils:199)
+[2024-04-26 16:19:27,852] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,854] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,855] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,856] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,856] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,857] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,858] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,859] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,859] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,860] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,861] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,861] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,862] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,863] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,863] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,864] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,865] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,865] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,866] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,866] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,867] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,868] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,868] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,869] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,870] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,870] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,871] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,872] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,872] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,873] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,873] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,874] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,875] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,875] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,876] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,877] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,877] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,878] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,878] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,879] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,880] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,880] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,881] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,882] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,882] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,883] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,883] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,884] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,885] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,885] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,886] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:27,887] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Resetting the last seen epoch of partition connect-test-0 to 0 since the associated topicId changed from _QuYOHIwQH-r-_n0Z-BbOw to UNfQB-fuTEmap4yfR5yXQQ (org.apache.kafka.clients.Metadata:562)
+[2024-04-26 16:19:27,887] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Cluster ID: ngzvjXfzQLmrjzH7Vu3M2A (org.apache.kafka.clients.Metadata:349)
+[2024-04-26 16:19:27,889] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Received unknown topic ID error in fetch for partition connect-test-0 (org.apache.kafka.clients.consumer.internals.FetchCollector:324)
+[2024-04-26 16:19:28,025] INFO [local-file-source|task-0] [Producer clientId=connector-producer-local-file-source-0] Cluster ID: ngzvjXfzQLmrjzH7Vu3M2A (org.apache.kafka.clients.Metadata:349)
+[2024-04-26 16:19:28,054] ERROR [local-file-source|task-0] WorkerSourceTask{id=local-file-source-0} failed to send record to connect-test:  (org.apache.kafka.connect.runtime.AbstractWorkerSourceTask:422)
+org.apache.kafka.common.errors.RecordTooLargeException: The message is 2846969 bytes when serialized which is larger than 1048576, which is the value of the max.request.size configuration.
+[2024-04-26 16:19:33,056] INFO [local-file-source|task-0] WorkerSourceTask{id=local-file-source-0} Committing offsets for 1 acknowledged messages (org.apache.kafka.connect.runtime.WorkerSourceTask:233)
+[2024-04-26 16:19:33,066] ERROR [local-file-source|task-0] WorkerSourceTask{id=local-file-source-0} Task threw an uncaught and unrecoverable exception. Task is being killed and will not recover until manually restarted (org.apache.kafka.connect.runtime.WorkerTask:212)
+org.apache.kafka.connect.errors.ConnectException: Unrecoverable exception from producer send callback
+	at org.apache.kafka.connect.runtime.WorkerSourceTask.maybeThrowProducerSendException(WorkerSourceTask.java:340)
+	at org.apache.kafka.connect.runtime.WorkerSourceTask.prepareToSendRecord(WorkerSourceTask.java:133)
+	at org.apache.kafka.connect.runtime.AbstractWorkerSourceTask.sendRecords(AbstractWorkerSourceTask.java:411)
+	at org.apache.kafka.connect.runtime.AbstractWorkerSourceTask.execute(AbstractWorkerSourceTask.java:367)
+	at org.apache.kafka.connect.runtime.WorkerTask.doRun(WorkerTask.java:204)
+	at org.apache.kafka.connect.runtime.WorkerTask.run(WorkerTask.java:259)
+	at org.apache.kafka.connect.runtime.AbstractWorkerSourceTask.run(AbstractWorkerSourceTask.java:77)
+	at org.apache.kafka.connect.runtime.isolation.Plugins.lambda$withClassLoader$1(Plugins.java:237)
+	at java.base/java.util.concurrent.Executors$RunnableAdapter.call(Executors.java:515)
+	at java.base/java.util.concurrent.FutureTask.run(FutureTask.java:264)
+	at java.base/java.util.concurrent.ThreadPoolExecutor.runWorker(ThreadPoolExecutor.java:1128)
+	at java.base/java.util.concurrent.ThreadPoolExecutor$Worker.run(ThreadPoolExecutor.java:628)
+	at java.base/java.lang.Thread.run(Thread.java:829)
+Caused by: org.apache.kafka.common.errors.RecordTooLargeException: The message is 2846969 bytes when serialized which is larger than 1048576, which is the value of the max.request.size configuration.
+[2024-04-26 16:19:33,066] INFO [local-file-source|task-0] [Producer clientId=connector-producer-local-file-source-0] Closing the Kafka producer with timeoutMillis = 30000 ms. (org.apache.kafka.clients.producer.KafkaProducer:1346)
+[2024-04-26 16:19:33,073] INFO [local-file-source|task-0] Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-26 16:19:33,073] INFO [local-file-source|task-0] Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-26 16:19:33,073] INFO [local-file-source|task-0] Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-26 16:19:33,073] INFO [local-file-source|task-0] Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-26 16:19:33,074] INFO [local-file-source|task-0] App info kafka.producer for connector-producer-local-file-source-0 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-26 16:28:27,847] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node -1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:28:27,941] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 1 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:03,389] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 2147483646 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:03,391] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:03,391] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Cancelled in-flight FETCH request with correlation id 1407 due to node 0 being disconnected (elapsed time since creation: 289ms, elapsed time since send: 289ms, request timeout: 30000ms) (org.apache.kafka.clients.NetworkClient:353)
+[2024-04-26 16:29:03,391] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Cancelled in-flight METADATA request with correlation id 1408 due to node 0 being disconnected (elapsed time since creation: 189ms, elapsed time since send: 189ms, request timeout: 30000ms) (org.apache.kafka.clients.NetworkClient:353)
+[2024-04-26 16:29:03,392] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Error sending fetch request (sessionId=70337245, epoch=1147) to node 0: (org.apache.kafka.clients.FetchSessionHandler:615)
+org.apache.kafka.common.errors.DisconnectException
+[2024-04-26 16:29:03,392] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Group coordinator localhost:9092 (id: 2147483646 rack: null) is unavailable or invalid due to cause: coordinator unavailable. isDisconnected: true. Rediscovery will be attempted. (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:999)
+[2024-04-26 16:29:03,511] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:03,511] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Connection to node 0 (ids4-Precision-5820-Tower/127.0.1.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2024-04-26 16:29:03,713] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:03,713] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Connection to node 0 (ids4-Precision-5820-Tower/127.0.1.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2024-04-26 16:29:03,944] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:03,944] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Connection to node 0 (ids4-Precision-5820-Tower/127.0.1.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2024-04-26 16:29:04,422] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:04,422] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Connection to node 0 (ids4-Precision-5820-Tower/127.0.1.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2024-04-26 16:29:05,276] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:05,276] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Connection to node 0 (ids4-Precision-5820-Tower/127.0.1.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2024-04-26 16:29:06,277] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:06,278] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Connection to node 0 (ids4-Precision-5820-Tower/127.0.1.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2024-04-26 16:29:07,282] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:07,282] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Connection to node 0 (ids4-Precision-5820-Tower/127.0.1.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2024-04-26 16:29:08,283] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:08,284] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Connection to node 0 (ids4-Precision-5820-Tower/127.0.1.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2024-04-26 16:29:09,284] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:09,284] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Connection to node 0 (ids4-Precision-5820-Tower/127.0.1.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2024-04-26 16:29:10,310] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:10,310] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Connection to node 0 (ids4-Precision-5820-Tower/127.0.1.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2024-04-26 16:29:11,312] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:11,312] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Connection to node 0 (ids4-Precision-5820-Tower/127.0.1.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2024-04-26 16:29:12,313] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:12,314] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Connection to node 0 (ids4-Precision-5820-Tower/127.0.1.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2024-04-26 16:29:13,314] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:13,315] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Connection to node 0 (ids4-Precision-5820-Tower/127.0.1.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2024-04-26 16:29:14,315] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:14,316] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Connection to node 0 (ids4-Precision-5820-Tower/127.0.1.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2024-04-26 16:29:15,316] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:15,316] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Connection to node 0 (ids4-Precision-5820-Tower/127.0.1.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2024-04-26 16:29:16,360] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Node 0 disconnected. (org.apache.kafka.clients.NetworkClient:997)
+[2024-04-26 16:29:16,360] WARN [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Connection to node 0 (ids4-Precision-5820-Tower/127.0.1.1:9092) could not be established. Node may not be available. (org.apache.kafka.clients.NetworkClient:830)
+[2024-04-26 16:29:16,417] INFO Kafka Connect stopping (org.apache.kafka.connect.runtime.Connect:67)
+[2024-04-26 16:29:16,418] INFO Stopping REST server (org.apache.kafka.connect.runtime.rest.RestServer:348)
+[2024-04-26 16:29:16,432] INFO Stopped http_8083@25b52284{HTTP/1.1, (http/1.1)}{0.0.0.0:8083} (org.eclipse.jetty.server.AbstractConnector:383)
+[2024-04-26 16:29:16,432] INFO node0 Stopped scavenging (org.eclipse.jetty.server.session:149)
+[2024-04-26 16:29:16,432] INFO Stopped o.e.j.s.ServletContextHandler@78b612c6{/,null,STOPPED} (org.eclipse.jetty.server.handler.ContextHandler:1159)
+[2024-04-26 16:29:16,435] INFO REST server stopped (org.apache.kafka.connect.runtime.rest.RestServer:377)
+[2024-04-26 16:29:16,435] INFO Herder stopping (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:115)
+[2024-04-26 16:29:16,435] INFO [local-file-source|task-0] Stopping task local-file-source-0 (org.apache.kafka.connect.runtime.Worker:1009)
+[2024-04-26 16:29:16,437] INFO [local-file-source|worker] Stopping connector local-file-source (org.apache.kafka.connect.runtime.Worker:420)
+[2024-04-26 16:29:16,437] INFO [local-file-source|worker] Scheduled shutdown for WorkerConnector{id=local-file-source} (org.apache.kafka.connect.runtime.WorkerConnector:267)
+[2024-04-26 16:29:16,438] INFO [local-file-source|worker] Completed shutdown for WorkerConnector{id=local-file-source} (org.apache.kafka.connect.runtime.WorkerConnector:287)
+[2024-04-26 16:29:16,438] INFO [local-file-sink|task-0] Stopping task local-file-sink-0 (org.apache.kafka.connect.runtime.Worker:1009)
+[2024-04-26 16:29:16,440] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Revoke previously assigned partitions connect-test-0 (org.apache.kafka.clients.consumer.internals.ConsumerRebalanceListenerInvoker:78)
+[2024-04-26 16:29:16,440] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Resetting generation and member id due to: consumer pro-actively leaving the group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1055)
+[2024-04-26 16:29:16,440] INFO [local-file-sink|task-0] [Consumer clientId=connector-consumer-local-file-sink-0, groupId=connect-local-file-sink] Request joining group due to: consumer pro-actively leaving the group (org.apache.kafka.clients.consumer.internals.ConsumerCoordinator:1102)
+[2024-04-26 16:29:16,443] INFO [local-file-sink|task-0] Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-26 16:29:16,443] INFO [local-file-sink|task-0] Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-26 16:29:16,443] INFO [local-file-sink|task-0] Closing reporter org.apache.kafka.common.telemetry.internals.ClientTelemetryReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-26 16:29:16,443] INFO [local-file-sink|task-0] Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-26 16:29:16,445] INFO [local-file-sink|task-0] App info kafka.consumer for connector-consumer-local-file-sink-0 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-26 16:29:16,446] INFO [local-file-sink|worker] Stopping connector local-file-sink (org.apache.kafka.connect.runtime.Worker:420)
+[2024-04-26 16:29:16,446] INFO [local-file-sink|worker] Scheduled shutdown for WorkerConnector{id=local-file-sink} (org.apache.kafka.connect.runtime.WorkerConnector:267)
+[2024-04-26 16:29:16,446] INFO [local-file-sink|worker] Completed shutdown for WorkerConnector{id=local-file-sink} (org.apache.kafka.connect.runtime.WorkerConnector:287)
+[2024-04-26 16:29:16,446] INFO Worker stopping (org.apache.kafka.connect.runtime.Worker:248)
+[2024-04-26 16:29:16,447] INFO Stopped FileOffsetBackingStore (org.apache.kafka.connect.storage.FileOffsetBackingStore:71)
+[2024-04-26 16:29:16,447] INFO Metrics scheduler closed (org.apache.kafka.common.metrics.Metrics:694)
+[2024-04-26 16:29:16,447] INFO Closing reporter org.apache.kafka.common.metrics.JmxReporter (org.apache.kafka.common.metrics.Metrics:698)
+[2024-04-26 16:29:16,447] INFO Metrics reporters closed (org.apache.kafka.common.metrics.Metrics:704)
+[2024-04-26 16:29:16,447] INFO App info kafka.connect for 127.0.1.1:8083 unregistered (org.apache.kafka.common.utils.AppInfoParser:88)
+[2024-04-26 16:29:16,447] INFO Worker stopped (org.apache.kafka.connect.runtime.Worker:269)
+[2024-04-26 16:29:16,448] INFO Herder stopped (org.apache.kafka.connect.runtime.standalone.StandaloneHerder:126)
+[2024-04-26 16:29:16,448] INFO Kafka Connect stopped (org.apache.kafka.connect.runtime.Connect:72)
